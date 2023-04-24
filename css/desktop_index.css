@@ -1,0 +1,103 @@
+@media screen and (min-width: 992px){
+
+  /* header */
+  /* main */
+
+    .first_p {
+        font-size: 40px;
+    }
+
+    
+   .cards{
+    gap: 40px;
+    height: 100%;
+    flex-wrap: wrap;
+   }
+  
+  
+   
+.background{
+  background-color: #D2D2D2;
+}
+.contain_two{
+    padding: 0;
+ height: 700px;
+ margin: 0 auto;
+ max-width: 1200px;
+}
+   .cards img{
+    height: 190px;
+   }
+  
+  
+  .title_fonctionnement{
+    margin-left: 0;
+    margin-bottom: 1em;
+    
+  }
+
+   .restaurant_title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+   }
+   .text_under_img{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+   }
+   .dishName__font{
+    margin: 0;
+   }
+   .text_under_img button{
+    margin-bottom: 2em;
+   }
+   .footerFlex_row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 6em;
+    align-items: center;
+    margin-right: 5em;
+   }
+   .mention_footer{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+   }
+   /* fonctionnement */
+   .contain_one{
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+    
+   }
+   .contain_one .button{
+    padding: 10px;
+    justify-content: center;
+     width: calc(100% - 100px);;
+   }
+   
+   .how_it_work{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 4em 1px 6em 1px
+   }
+
+   .footer{
+    display: flex;
+    flex-direction: row-reverse;
+    
+   }
+ 
+   input:checked + .check_logo .full_heart {
+    transition: 0.4s;
+    opacity: 1;
+    font-size: 38px;
+    top: -2px;
+    right: -2px;
+}
+  
+   
+}

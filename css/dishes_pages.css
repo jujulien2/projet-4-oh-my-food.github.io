@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+.descriptionDishes {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+/* dishes spawn animation */
+@keyframes spawn {
+    0% {
+        opacity: 0;
+        margin-left: 200px;
+
+    }
+
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+.dish_starter a {
+    animation: spawn 0.8s forwards;
+}
+
+/* arrow header */
+.arrow i {
+    font-size: 22px;
+    color: black;
+}
+
+/* Modificators added in html*/
+.display__flex {
+    display: flex;
+}
+
+.typeOfDish {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+hr {
+    border: #99E2D0 solid 2px;
+    margin: 0;
+    width: 40px;
+
+}
+
+.head_dish {
+    margin-bottom: 1em;
+}
+
+.header__flexCenter {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0px 15px 0px;
+    gap: 55px;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.text__robotoFont500 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.text__robotoFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.text__robotoFont700,
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* dish picture */
+.header_dish_img img {
+    width: 100%;
+    height: 240px;
+    position: absolute;
+
+}
+
+.header_dish_img {
+    margin-bottom: 11em;
+}
+
+/* la palette du goût */
+h1 {
+    justify-content: center;
+    display: flex;
+    gap: 2em;
+    font-size: 31px;
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 700;
+}
+
+h1 button {
+    border: none;
+    cursor: pointer;
+
+}
+
+
+/* contain */
+
+h1 button {
+    background: none;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    border-radius: 40px 40px 0px 0px;
+
+    position: relative;
+    padding: 10px;
+}
+
+
+/* Starter */
+.kind_dish {
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+    align-items: baseline;
+    height: 73px;
+}
+
+.kind_dish p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 89%;
+}
+
+.name_dish {
+    margin: 0;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.dish_starter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 1em;
+}
+
+.dish_starter a {
+
+    height: calc((100% / 3) - (40px / 3));
+
+}
+
+.dish_starter a .descriptionDishes {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    box-shadow: rgba(126, 123, 123, 0.103) 0px 6px 0px;
+    position: relative;
+
+}
+
+/* dish */
+/* input heart*/
+input[id="check-click-heart"] {
+    display: none;
+}
+
+input[id="check-click-heart"]:checked+.heart_logo .full_heart {
+    opacity: 1;
+}
+
+input[id="check-click-heart"]:checked+.heart_logo .empty_heart {
+    opacity: 0;
+}
+
+.empty_heart {
+    position: absolute;
+    z-index: 0;
+
+}
+
+.full_heart {
+    cursor: pointer;
+    opacity: 0;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all 0.3s;
+
+}
+
+/* check green logo */
+.descriptionDishes:hover .check_logo {
+    width: 20%;
+    opacity: 1;
+    transition: all 0.8s;
+    justify-content: center;
+}
+
+.descriptionDishes:hover .check_logo i {
+    right: unset;
+}
+
+.check_logo {
+    opacity: 0;
+    background: #99E2D0;
+    width: fit-content;
+    padding: 0px;
+    width: 0;
+    color: #99E2D0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.check_logo i {
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+    position: relative;
+    right: 27px;
+}
+
+.descriptionDishes:hover .price {
+    transition: all 0.8s;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    margin-left: 5px;
+}
+
+.price {
+    align-items: end;
+    margin-right: 1em;
+    position: absolute;
+    right: 0px;
+    top: 35px;
+}
+
+
+/* Button order */
+.order_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.order_button button {
+    box-shadow: rgba(126, 123, 123, 0.2) 0px 6px 0px;
+    font-size: 16px;
+    border: 0px solid white;
+    border-radius: 25px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+
+}
+
+.order_button button:hover {
+    filter: brightness(1.12);
+    box-shadow: rgba(126, 123, 123, 0.4) 0px 6px 0px;
+    transition: 0.9s;
+}
+
+/* Footer */
+.footer {
+    background-color: #353535;
+    padding: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.whiteLogo {
+    height: 27px;
+}
+
+.mention_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text_footer p img {
+    margin-right: 20px;
+    height: 15px;
+}

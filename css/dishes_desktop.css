@@ -1,0 +1,115 @@
+@media screen and (min-width: 992px){
+/* Modificators */
+.text__robotoFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+/* header */
+.header_dish_img img{
+    height: 500px;
+    position: absolute;
+}
+.full_heart{
+    right: 381px;
+    top: 34px;
+}
+.header_dish_img{
+    margin-bottom: 25em;
+}
+h1{
+    justify-content: center;
+}
+.header_logo{
+    justify-content: center;
+}
+.header_logo a {
+    position: absolute;
+    left: 1em;
+}
+
+/* main */
+    .contain{
+        position: relative;
+        margin: 0 auto;
+        max-width: 1055px;
+        padding: 10px 12em 10px 12em;
+    }
+   
+    .dish_starter{
+        margin-bottom: 3em;
+    }
+    /* check green logo */
+    .descriptionDishes:hover .check_logo{
+        padding: 9px;
+        width: 12%;
+        opacity: 1;
+        transition: all 0.5s;
+        justify-content: center;
+    }
+    .descriptionDishes:hover .price{
+        transition: all 0.8s;
+        display: flex;
+        background: unset;
+        right: 5em;
+        padding-right: 12px;
+        padding-left: 10px;
+    }
+    
+    .check_logo{
+        opacity: 0;
+        background:#99E2D0;
+        width: fit-content;
+        padding: 0px;
+        width: 0;
+        color: #99E2D0;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .check_logo i{
+        border-radius: 15px;
+        padding: 7px;
+        background-color: white;
+        
+    }
+      /* dishes spawn animation */
+    @keyframes spawn {
+        0%{
+            opacity: 0;
+           margin-left: 200px;
+        
+        }
+        
+        
+        100%{
+            opacity: 1;
+            margin-left: 0;
+        }
+        }
+        
+            .dish_starter a{
+        animation: spawn 1.8s forwards;
+            }
+    /* footer */
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        flex-direction: row-reverse;
+        gap: 3em;
+    }
+    .mention_footer{
+        flex-direction: row;
+       }
+     
+    .text_footer{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4em;
+    }
+   
+   
+  
+ 
+
+}
